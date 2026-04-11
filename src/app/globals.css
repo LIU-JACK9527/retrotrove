@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 31, 41, 55;
+  --background-rgb: 249, 250, 251;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: 'Inter', sans-serif;
+}
+
+.font-game {
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Custom styles for retro game theme */
+.retro-button {
+  @apply bg-secondary hover:bg-yellow-600 text-dark px-6 py-3 rounded-md font-bold transition-all duration-200 transform hover:scale-105;
+}
+
+.retro-card {
+  @apply bg-white rounded-lg shadow-lg p-6 border-2 border-gray-200 hover:shadow-xl transition-all duration-300;
+}
+
+/* Animation for retro effect */
+@keyframes pixel-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.pixel-bounce {
+  animation: pixel-bounce 2s infinite;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
