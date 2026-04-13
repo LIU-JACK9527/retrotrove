@@ -7,7 +7,12 @@ export const metadata: Metadata = {
   description: 'Play Age of Empires DS retro games online for free in your browser. Relive the classic strategy game experience.',
   keywords: 'Age of Empires DS, retro games, online games, browser games, classic games, strategy games',
   authors: [{ name: 'Retro Games Team' }],
-  viewport: 'width=device-width, initial-scale=1',
+};
+
+// 配置 viewport
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 // 根布局组件
