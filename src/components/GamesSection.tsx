@@ -162,8 +162,8 @@ export default function GamesSection() {
                   src="https://www.retrogames.cc/embed/35463-age-of-empires-the-age-of-kings-usa.html" 
                   width="100%" 
                   height="100%" 
-                  frameBorder="no" 
-                  allowFullScreen="true" 
+                  frameBorder="0" 
+                  allowFullScreen 
                   webkitallowfullscreen="true" 
                   mozallowfullscreen="true" 
                   scrolling="no"
