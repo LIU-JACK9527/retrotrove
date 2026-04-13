@@ -164,8 +164,6 @@ export default function GamesSection() {
                   height="100%" 
                   frameBorder="0" 
                   allowFullScreen 
-                  webkitallowfullscreen="true" 
-                  mozallowfullscreen="true" 
                   scrolling="no"
                   className="w-full h-full"
                 ></iframe>
