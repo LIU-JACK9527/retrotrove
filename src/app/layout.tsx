@@ -3,7 +3,7 @@ import './globals.css';
 
 // 配置网站元数据
 export const metadata: Metadata = {
-  title: 'Age of Empires DS | Retro Games Online',
+  title: 'retrotrove | Retro Games Online',
   description: 'Play Age of Empires DS retro games online for free in your browser. Relive the classic strategy game experience.',
   keywords: 'Age of Empires DS, retro games, online games, browser games, classic games, strategy games',
   authors: [{ name: 'Retro Games Team' }],
