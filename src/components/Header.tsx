@@ -12,8 +12,8 @@ export default function Header() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Desktop Logo */}
           <Link href="/" className="text-2xl font-bold flex items-center mb-4 md:mb-0 hidden md:flex">
-            <span className="text-secondary mr-2">⚔️</span>
-            <span className="font-game">Age of Empires DS</span>
+            <img src="/images/logo.png" alt="retrotrove" className="h-20 mr-2" />
+            <span className="font-game text-lg">retrotrove</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -42,8 +42,8 @@ export default function Header() {
               </svg>
             </button>
             <Link href="/" className="text-base font-bold flex items-center">
-              <span className="text-secondary mr-2">⚔️</span>
-              <span className="font-game">Age of Empires DS</span>
+              <img src="/images/logo.png" alt="retrotrove" className="h-16 mr-2" />
+              <span className="font-game text-sm">retrotrove</span>
             </Link>
           </div>
         </div>
@@ -54,8 +54,8 @@ export default function Header() {
       <div className={`fixed top-0 left-0 h-full w-64 bg-dark border-r border-gray-700 z-50 md:hidden transition-transform duration-300 transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-4 border-b border-gray-700 flex justify-between items-center">
           <Link href="/" className="text-xl font-bold flex items-center">
-            <span className="text-secondary mr-2">⚔️</span>
-            <span className="font-game">Age of Empires DS</span>
+            <img src="/images/logo.png" alt="retrotrove" className="h-16 mr-2" />
+            <span className="font-game text-sm">retrotrove</span>
           </Link>
           <button 
             className="text-white focus:outline-none"
