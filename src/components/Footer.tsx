@@ -7,9 +7,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-1">
-            <Link href="/" className="text-xl font-bold flex items-center mb-4">
-              <img src="/images/logo.png" alt="retrotrove" className="h-20 mr-2" />
-              <span className="font-game text-lg">retrotrove</span>
+            <Link href="/" className="flex items-center mb-4">
+              <img src="/images/logo.png" alt="retrotrove" className="h-20" />
             </Link>
             <p className="text-gray-400 text-sm">
               Play classic retro games online for free in your browser. Relive the nostalgia of retro gaming with retrotrove.
@@ -52,7 +51,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400 text-sm">
           <p>© 2026 retrotrove Retro Games. All rights reserved.</p>
           <p className="mt-2">
-            Age of Empires is a trademark of Microsoft Corporation. This site is not affiliated with Microsoft.
+            retrotrove is a trademark of retrotrove. This site is not affiliated with Microsoft.
           </p>
         </div>
       </div>

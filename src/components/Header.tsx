@@ -11,9 +11,8 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Desktop Logo */}
-          <Link href="/" className="text-2xl font-bold flex items-center mb-4 md:mb-0 hidden md:flex">
-            <img src="/images/logo.png" alt="retrotrove" className="h-20 mr-2" />
-            <span className="font-game text-lg">retrotrove</span>
+          <Link href="/" className="flex items-center mb-4 md:mb-0 hidden md:flex">
+            <img src="/images/logo.png" alt="retrotrove" className="h-20" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -41,9 +40,8 @@ export default function Header() {
                 )}
               </svg>
             </button>
-            <Link href="/" className="text-base font-bold flex items-center">
-              <img src="/images/logo.png" alt="retrotrove" className="h-16 mr-2" />
-              <span className="font-game text-sm">retrotrove</span>
+            <Link href="/" className="flex items-center">
+              <img src="/images/logo.png" alt="retrotrove" className="h-16" />
             </Link>
           </div>
         </div>
@@ -53,9 +51,8 @@ export default function Header() {
       <div className={`fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={() => setIsMenuOpen(false)} />
       <div className={`fixed top-0 left-0 h-full w-64 bg-dark border-r border-gray-700 z-50 md:hidden transition-transform duration-300 transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-4 border-b border-gray-700 flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold flex items-center">
-            <img src="/images/logo.png" alt="retrotrove" className="h-16 mr-2" />
-            <span className="font-game text-sm">retrotrove</span>
+          <Link href="/" className="flex items-center">
+            <img src="/images/logo.png" alt="retrotrove" className="h-16" />
           </Link>
           <button 
             className="text-white focus:outline-none"
