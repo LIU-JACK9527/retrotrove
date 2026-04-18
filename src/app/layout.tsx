@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import BackToTop from '@/components/BackToTop';
 
 // 配置网站元数据
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function RootLayout({
       </head>
       <body className="bg-light text-dark min-h-screen flex flex-col">
         {children}
+        <BackToTop />
       </body>
     </html>
   );

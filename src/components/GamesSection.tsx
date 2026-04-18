@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 
 export default function GamesSection() {
@@ -5,8 +7,8 @@ export default function GamesSection() {
   const rightNavGames = [
     {
       id: 1,
-      title: 'Age of Empires: The Age of Kings',
-      image: 'https://www.retrogames.cc/media/Nintendo_DS/Age_of_Empires_-_The_Age_of_Kings_(USA)/screenshots/screenshot02.jpg',
+      title: 'Kingdom Rush',
+      image: '/images/Kingdom Rush1.jpg',
       link: '/play/age-of-empires-the-age-of-kings'
     },
     {
@@ -156,7 +158,7 @@ export default function GamesSection() {
           {/* 左侧 iframe 部分 */}
           <div className="lg:w-3/4">
             <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg h-full flex flex-col">
-              {/* 实际 iframe 内容 */}
+              {/* 游戏 iframe */}
               <div className="flex-grow h-[60vh] lg:h-auto">
                 <iframe 
                   src="https://www.retrogames.cc/embed/35463-age-of-empires-the-age-of-kings-usa.html" 
@@ -183,7 +185,7 @@ export default function GamesSection() {
                     className="w-full h-32 object-cover"
                   />
                   <div className="p-3">
-                    <h3 className="text-sm font-semibold mb-2 truncate">{game.title}</h3>
+                    <h3 className={`text-sm font-semibold mb-2 ${game.id === 1 ? 'text-center' : 'truncate'}`}>{game.title}</h3>
                     <Link href={game.link} className="inline-block bg-primary hover:bg-blue-700 text-white px-3 py-1 rounded text-xs font-bold transition-colors w-full text-center">
                       Play Now
                     </Link>
